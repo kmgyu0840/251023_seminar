@@ -3,74 +3,19 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Simple JS Homepage — Git 실습용</title>
+  <title>Git 협업 실습 - 7인 구성</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="site-header">
-    <div class="container">
-      <h1>Simple JS Homepage</h1>
-      <p class="tagline">Git 실습 세미나 예제 프로젝트</p>
-    </div>
+    <h1>Git 협업 실습 (7인 구성)</h1>
+    <p class="tagline">각자 담당 컴포넌트를 수정해보세요 🚀</p>
   </header>
 
   <main class="container">
-    <section id="intro">
-      <h2>소개</h2>
-      <p>이 페이지는 Git 실습(클론 → 브랜치 → 커밋 → 푸시 → PR → 충돌해결)용으로 만든 간단한 예제입니다.</p>
-    </section>
-
-    <section id="features">
-      <h2>기능 미리보기</h2>
-      <ul>
-        <li>간단한 DOM 조작</li>
-        <li>폼 입력 검증 (이메일)</li>
-        <li>브랜치로 기능 추가 시 연습하기 좋은 버튼</li>
-      </ul>
-
-      <div class="card">
-        <h3>버튼 데모</h3>
-        <button id="magicBtn">클릭해보세요</button>
-        <p id="magicMsg" class="muted">아직 클릭되지 않았습니다.</p>
-      </div>
-
-      <div class="card">
-        <h3>문의하기 (폼)</h3>
-        <form id="contactForm" novalidate>
-          <label>
-            이름
-            <input type="text" id="name" required />
-          </label>
-          <label>
-            이메일
-            <input type="email" id="email" required />
-          </label>
-          <label>
-            메시지
-            <textarea id="message" rows="4" required></textarea>
-          </label>
-          <div class="form-actions">
-            <button type="submit">보내기</button>
-            <button type="button" id="clearBtn">초기화</button>
-          </div>
-          <p id="formResult" class="muted"></p>
-        </form>
-      </div>
-
-      <div class="card">
-        <h3>브랜치 실습용 섹션</h3>
-        <p>이 문장을 바꾸는 작업을 브랜치에서 해보고, merge / rebase 연습을 해보세요.</p>
-        <small class="muted">권장 실습: <code>feature/modify-text</code> 브랜치 만들고 텍스트 수정 후 PR</small>
-      </div>
-    </section>
+    <div id="boxes" class="grid"></div>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>© Simple JS Homepage — Git 실습 예제</p>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
+  <script type="module" src="script.js"></script>
 </body>
 </html>
