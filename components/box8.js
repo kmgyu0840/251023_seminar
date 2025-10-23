@@ -8,7 +8,7 @@ export default function box8() {
     <!-- ✅ 수정 가능한 영역 -->
     <div class="editable-area">
       <!-- 여기 안쪽 코드만 자유롭게 수정하세요 -->
-      <p>이 문장은 참가자 8이 직접 바꾸거나, 기능을 추가할 수 있는 공간입니다.123</p>
+      <p>이 끝나가요</p>
       <button id="btn8">클릭</button>
       <p id="msg8" class="muted"></p>
     </div>
