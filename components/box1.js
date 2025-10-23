@@ -19,7 +19,7 @@ export default function box1() {
   const msg = box.querySelector("#msg1");
 
   btn.addEventListener("click", () => {
-    msg.textContent = "참가자 1의 버튼이 클릭되었습니다! 🎉";
+    msg.innerHTML = `<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png" alt="Pikachu" width="500"/>`;
   });
 
   return box;
